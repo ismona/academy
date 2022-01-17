@@ -1,0 +1,113 @@
+{
+  "data": {
+    "id": 1,
+    "name": "HTML a CSS",
+    "description": "<p>HTML A CSS</p>",
+    "slug": "html-css",
+    "tags": ["frontend"],
+    "tags_string": "frontend",
+    "filter": null,
+    "hash": null,
+    "order": 1,
+    "image": {
+      "id": 1,
+      "disk_name": "613a169962b91598258633.jpeg",
+      "file_name": "463376515-5804f6585f9b5805c2cc5fad.jpeg",
+      "file_size": 180935,
+      "content_type": "image/jpeg",
+      "title": null,
+      "description": null,
+      "field": "image",
+      "sort_order": 1,
+      "created_at": "2021-09-09 14:13:45",
+      "updated_at": "2021-09-09 14:13:45",
+      "path": "https://academy.wezeo.dev/cms/storage/app/uploads/public/613/a16/996/613a169962b91598258633.jpeg",
+      "extension": "jpeg"
+    },
+    "courses": [
+      {
+        "id": 1,
+        "name": "vytvor si svoju prvu stranku",
+        "slug": "vytvor-si-svoju-prvu-stranku",
+        "image": {
+          "id": 5,
+          "disk_name": "613a169a9b644638166545.png",
+          "file_name": "logo-2582748_1280.png",
+          "file_size": 100799,
+          "content_type": "image/png",
+          "title": null,
+          "description": null,
+          "field": "image",
+          "sort_order": 5,
+          "created_at": "2021-09-09 14:13:46",
+          "updated_at": "2021-09-09 14:13:46",
+          "path": "https://academy.wezeo.dev/cms/storage/app/uploads/public/613/a16/9a9/613a169a9b644638166545.png",
+          "extension": "png"
+        },
+        "tags_string": null,
+        "tags": null,
+        "description": "<p>prva stranka</p>",
+        "video_tags_string": "html",
+        "video_tags": ["html"],
+        "done_by_active_user": null,
+        "bookmark_by_active_user": null
+      },
+      {
+        "id": 2,
+        "name": "tiktok 2.0",
+        "slug": "tiktok-20",
+        "image": {
+          "id": 6,
+          "disk_name": "613a169aaeb40589158537.png",
+          "file_name": "share_img.png",
+          "file_size": 44917,
+          "content_type": "image/png",
+          "title": null,
+          "description": null,
+          "field": "image",
+          "sort_order": 6,
+          "created_at": "2021-09-09 14:13:46",
+          "updated_at": "2021-09-09 14:13:46",
+          "path": "https://academy.wezeo.dev/cms/storage/app/uploads/public/613/a16/9aa/613a169aaeb40589158537.png",
+          "extension": "png"
+        },
+        "tags_string": null,
+        "tags": null,
+        "description": "vytvor si tiktok",
+        "video_tags_string": "tiktok",
+        "video_tags": ["tiktok"],
+        "done_by_active_user": null,
+        "bookmark_by_active_user": null
+      },
+      {
+        "id": 3,
+        "name": "Bolt 2.0",
+        "slug": "bolt-20",
+        "image": {
+          "id": 7,
+          "disk_name": "613a169ac5470967035533.png",
+          "file_name": "1200x630wa.png",
+          "file_size": 137439,
+          "content_type": "image/png",
+          "title": null,
+          "description": null,
+          "field": "image",
+          "sort_order": 7,
+          "created_at": "2021-09-09 14:13:46",
+          "updated_at": "2021-09-09 14:13:46",
+          "path": "https://academy.wezeo.dev/cms/storage/app/uploads/public/613/a16/9ac/613a169ac5470967035533.png",
+          "extension": "png"
+        },
+        "tags_string": null,
+        "tags": null,
+        "description": "vytvor si bolt",
+        "video_tags_string": "bolt",
+        "video_tags": ["bolt"],
+        "done_by_active_user": null,
+        "bookmark_by_active_user": null
+      }
+    ],
+    "created_at": "2021-09-09 14:13:45",
+    "updated_at": "2021-09-09 14:13:45"
+  }
+}
