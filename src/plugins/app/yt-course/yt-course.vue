@@ -10,7 +10,13 @@
 		</ion-header>
 		<ion-content>
 			<div class="lesson-wrapper">
-				<iframe width="560" height="315" v-if="lesson.content" :src="videoPath" frameborder="0"></iframe>
+				<iframe
+					width="560"
+					height="315"
+					v-if="lesson.content"
+					:src="videoPath"
+					frameborder="0"
+				></iframe>
 				<h2>{{ lesson.name }}</h2>
 				<p v-if="lesson.content">
 					{{ lesson.content[0].block_content }}
@@ -37,7 +43,7 @@ export default {
 		return {
 			lessonSlug: this.$route.params.slug,
 			lesson: [],
-			videoPath: ''
+			videoPath: '',
 		}
 	},
 	methods: {

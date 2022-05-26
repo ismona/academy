@@ -52,7 +52,7 @@ import {
 	modalController,
 } from '@ionic/vue'
 
-import CommentsModal from '../components/CommentsModal.vue'
+import CommentsModal from './components/comments-modal.vue'
 
 export default {
 	data() {
@@ -65,7 +65,7 @@ export default {
 		getLessons() {
 			axios
 				.get(
-					`https://academy.wezeo.dev/cms/api/v1/lessons/${this.courseSlug}`
+					`https://academy.openlab.sk/cms/api/v1/lessons/${this.courseSlug}`
 				)
 				.then((response) => (this.lesson = response.data.data))
 		},
@@ -87,7 +87,7 @@ export default {
 		IonTitle,
 		IonContent,
 		IonBackButton,
-		IonButtons,
+		IonButtons
 	},
 }
 </script>

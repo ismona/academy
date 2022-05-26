@@ -68,7 +68,7 @@ export default {
 		getComments() {
 			axios
 				.get(
-					`https://academy.wezeo.dev/cms/api/v1/comments/lesson/${this.id}`
+					`https://academy.openlab.sk/cms/api/v1/comments/lesson/${this.id}`
 				)
 				.then(
 					(response) => (this.comments = response.data.data.reverse())

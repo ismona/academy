@@ -50,9 +50,9 @@ import {
 	IonSegmentButton,
 } from '@ionic/vue'
 
-import ThemeHeader from '../components/ThemeHeader.vue'
-import ProjectContent from '../components/ProjectContent.vue'
-import VideoContent from '../components/VideoContent.vue'
+import ThemeHeader from './components/theme-header.vue'
+import ProjectContent from './components/project-content.vue'
+import VideoContent from './components/video-content.vue'
 import axios from 'axios'
 
 export default {
@@ -75,7 +75,7 @@ export default {
 		getTheme() {
 			axios
 				.get(
-					`https://academy.wezeo.dev/cms/api/v1/themes/${this.themeSlug}`
+					`https://academy.openlab.sk/cms/api/v1/themes/${this.themeSlug}`
 				)
 				.then((response) => (this.theme = response.data.data))
 		},

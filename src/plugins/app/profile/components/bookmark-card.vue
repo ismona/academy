@@ -25,7 +25,7 @@ const api = {
 	bookmark: (id) =>
 		axios
 			.get(
-				`https://academy.wezeo.dev/cms/api/v1/users/${id}/lessons?types=bookmark`
+				`https://academy.openlab.sk/cms/api/v1/users/${id}/lessons?types=bookmark`
 			)
 			.then((response) => response.data.data),
 }

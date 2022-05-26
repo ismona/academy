@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import ProjectCard from '../components/ProjectCard.vue'
+import ProjectCard from './project-card.vue'
 
 export default {
   inject: ['$theme'],

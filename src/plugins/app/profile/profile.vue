@@ -88,7 +88,7 @@ import {
 } from 'ionicons/icons'
 
 import { mapGetters } from 'vuex'
-import BookmarkCard from '../components/BookmarkCard.vue'
+import BookmarkCard from './components/bookmark-card.vue'
 
 export default {
 	data() {

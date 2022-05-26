@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router'
-import HomePage from '../pages/HomePage.vue'
-import ThemePage from '../pages/ThemePage.vue'
-import CoursePage from '../pages/CoursePage.vue'
-import LessonPage from '../pages/LessonPage.vue'
-import YtThemePage from '../pages/YtThemePage.vue'
-import YtCoursePage from '../pages/YtCoursePage.vue'
-import LoginPage from '../pages/LoginPage.vue'
-import SignUpPage from '../pages/SignUpPage.vue'
-import ProfilePage from '../pages/ProfilePage.vue'
+import Home from '../plugins/app/home/home.vue'
+import Theme from '../plugins/app/theme/theme.vue'
+import Course from '../plugins/app/course/course.vue'
+import Lesson from '../plugins/app/lesson/lesson.vue'
+import YtTheme from '../plugins/app/yt-theme/yt-theme.vue'
+import YtCourse from '../plugins/app/yt-course/yt-course.vue'
+import Login from '../plugins/app/login/login.vue'
+import SignUp from '../plugins/app/registration/signup.vue'
+import Profile from '../plugins/app/profile/profile.vue'
 
 const routes = [
 	{
@@ -17,42 +17,42 @@ const routes = [
 	{
 		name: 'home',
 		path: '/home',
-		component: HomePage,
+		component: Home,
 	},
 	{
 		path: '/login',
-		component: LoginPage,
+		component: Login,
 	},
 	{
 		path: '/signup',
-		component: SignUpPage,
+		component: SignUp,
 	},
 	{
 		path: '/theme/:slug',
-		component: ThemePage,
+		component: Theme,
 	},
 	{
 		path: '/yt-theme/:slug',
-		component: YtThemePage,
+		component: YtTheme,
 	},
 	{
 		path: '/course/:slug',
-		component: CoursePage,
+		component: Course,
 	},
 	{
 		name: 'Youtube Course Page',
 		path: '/yt-course/:slug',
-		component: YtCoursePage,
+		component: YtCourse,
 	},
 	{
 		name: 'Lesson Page',
 		path: '/lesson/:slug',
-		component: LessonPage,
+		component: Lesson,
 	},
 	{
 		name: 'profile',
 		path: '/profile',
-		component: ProfilePage
+		component: Profile
 	}
 ]
 

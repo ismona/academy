@@ -9,24 +9,24 @@
 			</ion-toolbar>
 		</ion-header>
 		<ion-content>
-			<yt-theme-header
+			<yt-header
 				v-if="ytTheme.image"
 				:name="ytTheme.name"
 				:path="ytTheme.image.path"
-			></yt-theme-header>
-			<yt-course-card
+			></yt-header>
+			<yt-card
 				v-for="lesson in ytTheme.lessons"
 				:key="lesson"
 				:name="lesson.group_name"
 				:lessons="lesson.group_lessons"
-			></yt-course-card>
+			></yt-card>
 		</ion-content>
 	</ion-page>
 </template>
 
 <script>
-import YtThemeHeader from '../components/YtThemeHeader.vue'
-import YtCourseCard from '../components/YtCourseCard.vue'
+import YtHeader from './components/yt-header.vue'
+import YtCard from './components/yt-card.vue'
 
 import {
 	IonPage,
@@ -68,8 +68,8 @@ export default {
 		IonContent,
 		IonBackButton,
 		IonButtons,
-		YtThemeHeader,
-		YtCourseCard,
+		YtHeader,
+		YtCard,
 	},
 }
 </script>

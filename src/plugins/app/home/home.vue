@@ -112,19 +112,10 @@ import {
 	IonLabel,
 } from '@ionic/vue'
 
-import ThemeCard from '../components/ThemeCard.vue'
+import ThemeCard from './components/theme-card.vue'
 import { mapGetters } from 'vuex'
 
 export default {
-	data() {
-		return {
-			selectedSegment: 'all',
-			themes: [],
-			filteredThemes: [],
-			ytLessons: [],
-			filteredLessons: [],
-		}
-	},
 	components: {
 		IonPage,
 		IonHeader,
@@ -140,6 +131,23 @@ export default {
 		IonSegmentButton,
 		IonLabel,
 		ThemeCard,
+	},
+	data() {
+		return {
+			selectedSegment: 'all',
+			themes: null,
+			filteredThemes: null,
+			ytLessons: null,
+			filteredLessons: null,
+		}
+	},
+	computed: {
+		...mapGetters('auth', ['isLoggedIn']),
+	},
+	async mounted() {
+		await this.getThemes()
+		await this.getYtLessons()
+		this.filteredThemes = this.themes
 	},
 	methods: {
 		segmentChanged(ev) {
@@ -159,26 +167,25 @@ export default {
 			})
 		},
 		async getThemes() {
-			await axios
-				.get('https://academy.wezeo.dev/cms/api/v1/themes')
-				.then((response) => (this.themes = response.data.data))
+			try {
+				let response = await axios
+					.get('https://academy.openlab.sk/cms/api/v1/themes')
+					this.themes = response.data.data
+			} catch (err) {
+				console.log(err)
+			}
 		},
 		async getYtLessons() {
-			await axios
-				.get(
-					'https://open-academy.sk/cms/api/courses?results_per_page=1000'
-				)
-				.then((response) => (this.ytLessons = response.data.data))
+			try {
+				await axios
+					.get(
+						'https://open-academy.sk/cms/api/courses?results_per_page=1000'
+					)
+					.then((response) => (this.ytLessons = response.data.data))
+			} catch (err) {
+				console.log(err)
+			}
 		},
-	},
-	computed: {
-		...mapGetters('auth', ['isLoggedIn']),
-	},
-	async mounted() {
-		await this.getThemes()
-		await this.getYtLessons()
-		this.filteredThemes = this.themes
-		console.log("nieco:" + this.ytLessons)
 	},
 }
 </script>

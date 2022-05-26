@@ -23,14 +23,14 @@ import '@ionic/vue/css/display.css'
 /* Theme variables */
 import './theme/variables.css'
 
-import ThemePage from './pages/ThemePage.vue'
+import Theme from './plugins/app/theme/theme.vue'
 
 const app = createApp(App)
 	.use(IonicVue)
 	.use(router)
 	.use(store)
 
-app.component('theme-page', ThemePage)
+app.component('theme', Theme)
 
 router.isReady().then(() => {
 	app.mount('#app')

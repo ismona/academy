@@ -30,7 +30,7 @@ import {
 	IonCardTitle,
 } from '@ionic/vue'
 
-import ThumbnailCard from '../components/ThumbnailCard.vue'
+import ThumbnailCard from '../plugins/app/course/components/thumbnail-card.vue'
 
 export default {
 	props: ['name', 'videos', 'slug'],

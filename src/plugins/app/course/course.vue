@@ -43,8 +43,8 @@ import {
 } from '@ionic/vue'
 
 import axios from 'axios'
-import LessonCard from '../components/LessonCard.vue'
-import LessonHeader from '../components/LessonHeader.vue'
+import LessonCard from './components/lesson-card.vue'
+import LessonHeader from './components/lesson-header.vue'
 
 export default {
 	data() {
@@ -57,7 +57,7 @@ export default {
 		getLessons() {
 			axios
 				.get(
-					`https://academy.wezeo.dev/cms/api/v1/courses/${this.courseSlug}`
+					`https://academy.openlab.sk/cms/api/v1/courses/${this.courseSlug}`
 				)
 				.then((response) => (this.courses = response.data.data))
 		},
